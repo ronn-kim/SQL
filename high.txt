@@ -1,0 +1,20 @@
+students - id, name, marks ,position, class_id, mode_payment,
+
+department- id, department_name, 
+
+payment- id, mode_payment , 
+ 
+employees- id, name, deparment_id, salaries_id, phone_number,house_master_id,
+
+houses -id, student_id,  housemaster_id, name, 
+
+clubs -id , student_id, name, 
+
+grading- id ,student_id ,marks_id ,position ,
+
+salaries -id, department_id, name , mode_payment , amount ,employee_id,
+
+classes- id ,names ,grading_id,
+
+house_master -id ,name ,house,
+

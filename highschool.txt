@@ -1,4 +1,4 @@
-Student= StudentID (Primary Key)= FirstName= LastName= DateOfBirth= Gender= Address= Email= EnrollmentDate= GradeLevel
+student= studentID (Primary Key)= first_name= last_name= date_of_birth= gender= address= email= enrollment_date= grade_level
 
 Teacher= TeacherID (Primary Key)= FirstName= LastName= DateOfBirth= Gender= Address= PhoneNumber= Email= HireDate= DepartmentID (Foreign Key)
 
@@ -6,7 +6,7 @@ Course= CourseID (Primary Key)= CourseName= CourseDescription= Credits= Departme
 
 Class= ClassID (Primary Key)= ClassName= CourseID (Foreign Key)= TeacherID (Foreign Key)= ScheduleID (Foreign Key)= ClassroomID (Foreign Key)
 
-Department= DepartmentID (Primary Key)= DepartmentName= DepartmentHead (Foreign Key referencing TeacherID)
+department= departmentID (Primary Key)= department_name= department_head ( TeacherID)
 
 Administrator= AdminID (Primary Key)= FirstName= LastName= DateOfBirth= Gender= Address= PhoneNumber= Email= HireDate= Role
 

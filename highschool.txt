@@ -1,0 +1,41 @@
+Student= StudentID (Primary Key)= FirstName= LastName= DateOfBirth= Gender= Address= PhoneNumber= Email= EnrollmentDate= GradeLevel
+
+Teacher= TeacherID (Primary Key)= FirstName= LastName= DateOfBirth= Gender= Address= PhoneNumber= Email= HireDate= DepartmentID (Foreign Key)
+
+Course= CourseID (Primary Key)= CourseName= CourseDescription= Credits= DepartmentID (Foreign Key)
+
+Class= ClassID (Primary Key)= ClassName= CourseID (Foreign Key)= TeacherID (Foreign Key)= ScheduleID (Foreign Key)= ClassroomID (Foreign Key)
+
+Department= DepartmentID (Primary Key)= DepartmentName= DepartmentHead (Foreign Key referencing TeacherID)
+
+Administrator= AdminID (Primary Key)= FirstName= LastName= DateOfBirth= Gender= Address= PhoneNumber= Email= HireDate= Role
+
+Parent= ParentID (Primary Key)= FirstName= LastName= PhoneNumber= Email= Address= RelationshipToStudent
+
+Grade= GradeID (Primary Key)= StudentID (Foreign Key)= ClassID (Foreign Key)= GradeValue= GradeDate
+
+Attendance= AttendanceID (Primary Key)= StudentID (Foreign Key)= ClassID (Foreign Key)= Date= Status (Present/Absent)
+
+assignment= assignmentID (Primary Key)= CourseID (Foreign Key)= assignment_title= assignment_description= due_date= max_Points
+
+exam= examID (Primary Key)= courseID (Foreign Key)= exam_title= exam_date= max_score
+
+schedule= scheduleID (Primary Key)= classID (Foreign Key)= day_of_week= start_time= end_time
+
+Extracurricular Activity= ActivityID (Primary Key)= activity_name= description= start_date= end_dates
+
+library= libraryID (Primary Key)= library_name= location= open_hours
+
+book= BookID (Primary Key)= LibraryID (Foreign Key)= Title= Author= Publisher= puplisher= PublicationYear= Genre
+
+Borrow Record= BorrowID (Primary Key)= BookID (Foreign Key)= StudentID (Foreign Key)= BorrowDate= ReturnDate
+
+Classroom= ClassroomID (Primary Key)= RoomNumber= Building= Capacity
+
+Event= EventID (Primary Key)= EventName= EventDate= Location= Description
+
+Fee= FeeID (Primary Key)= StudentID (Foreign Key)= FeeType= Amount= DueDate= Status (Paid/Unpaid)
+
+Payment= PaymentID (Primary Key)= StudentID (Foreign Key)= FeeID (Foreign Key)= PaymentDate= AmountPaid= PaymentMethod
+
+Transport= TransportID (Primary Key)= TransportType= Route= DriverName= Capacity

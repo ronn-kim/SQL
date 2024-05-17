@@ -22,7 +22,7 @@ exam= examID (Primary Key)= courseID (Foreign Key)= exam_title= exam_date= max_s
 
 schedule= scheduleID (Primary Key)= classID (Foreign Key)= day_of_week= start_time= end_time
 
-Extracurricular Activity= ActivityID (Primary Key)= activity_name= description= start_date= end_dates
+Extracurricular Activity= ActivityID (Primary Key)= activity_name= description
 
 library= libraryID (Primary Key)= library_name= location= open_hours
 

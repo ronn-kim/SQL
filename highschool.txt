@@ -4,19 +4,22 @@ Teacher= TeacherID (Primary Key)= FirstName= LastName= DateOfBirth= Gender= Addr
 
 Course= CourseID (Primary Key)= CourseName= CourseDescription= Credits= DepartmentID (Foreign Key)
 
-Class= ClassID (Primary Key)= ClassName= CourseID (Foreign Key)= TeacherID (Foreign Key)= ScheduleID (Foreign Key)= ClassroomID (Foreign Key)
+class= classID (Primary Key)= class_name= course_id (Foreign Key)= teacher_id (Foreign Key)= scheduleID (Foreign Key)= classroom_id (Foreign Key)
 
 department= departmentID (Primary Key)= department_name= department_head ( TeacherID)
 
-Administrator= AdminID (Primary Key)= FirstName= LastName= DateOfBirth= Gender= Address= PhoneNumber= Email= HireDate= Role
+administrator= adminID (Primary Key)= first_name= last_name= date_of_birth= gender= address= phone_number= email= hire_date= Role
 
-Parent= ParentID (Primary Key)= FirstName= LastName= PhoneNumber= Email= Address= RelationshipToStudent
+parent= parentID (Primary Key)= first_name= last_name= phone_number= email= address= relationship_to_Student
 
-Grade= GradeID (Primary Key)= StudentID (Foreign Key)= ClassID (Foreign Key)= GradeValue= GradeDate
+grade= gradeID (Primary Key)= student_id (Foreign Key)= class_id (Foreign Key)= grade_value= grade_date
 
-Attendance= AttendanceID (Primary Key)= StudentID (Foreign Key)= ClassID (Foreign Key)= Date= Status (Present/Absent)
+attendance= attendanceID (Primary Key)= student_id (Foreign Key)= class_id (Foreign Key)= date = status (Present/Absent)
 
 assignment= assignmentID (Primary Key)= CourseID (Foreign Key)= assignment_title= assignment_description= due_date= max_Points
+
+student_parent=> student_id=> parent_id=>
+
 
 exam= examID (Primary Key)= courseID (Foreign Key)= exam_title= exam_date= max_score
 

@@ -1,4 +1,4 @@
-Student= StudentID (Primary Key)= FirstName= LastName= DateOfBirth= Gender= Address= PhoneNumber= Email= EnrollmentDate= GradeLevel
+Student= StudentID (Primary Key)= FirstName= LastName= DateOfBirth= Gender= Address= Email= EnrollmentDate= GradeLevel
 
 Teacher= TeacherID (Primary Key)= FirstName= LastName= DateOfBirth= Gender= Address= PhoneNumber= Email= HireDate= DepartmentID (Foreign Key)
 
